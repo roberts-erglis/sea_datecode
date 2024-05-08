@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seagate date code calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Seagate date code calculator</h1>
+        <input type="text" name='date' class='seagate_date_field' size="12" pattern="[0-9]*" step='1'/>
+        <!-- Advance option -->
+        <div class="advanced_options">
+            <label for="dropbox_1">Separator: </label>
+            <select class="separator" id="dropbox_1">
+                <option value="-">-Dash-</option>
+                <option value="/">/Slash/</option>
+                <option value=".">.Point.</option>
+                <option value="_">_Underline_</option>
+                <option value=" "> Space </option>
+                <option value=""> No Space </option>
+            </select>
+            <label for="dropbox_2">Format: </label>
+            <select class="format" id="dropbox_2">
+                <option value="dmy">dd/mm/yyyy</option>
+                <option value="mdy">mm/dd/yyyy</option>
+                <option value="myd">mm/yyyy/dd</option>
+                <option value="dym">dd/yyyy/mm</option>
+                <option value="ydm">yyyy/dd/mm</option>
+                <option value="ymd">yyyy/mm/dd</option>
+            </select>
+        </div>
+        <!-- Message/Output -->
+        <div class="seagate_date_output">
+            Please enter 4 or 5 digits code.
+        </div>
+    </div>  
+</body>
+</html>

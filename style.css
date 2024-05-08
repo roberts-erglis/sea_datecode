@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+body {
+  font-family: Roboto, Arial;
+  background-color: #1e1e1c;
+  color: #a9a344;
+}
+h1 {
+  margin-bottom: 3rem;
+  font-size: 64px;
+  line-height: 1.2em;
+  color: #a9a344;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .container {
+    max-width: 460px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .seagate_date_field {
+    padding: 5px 10px;
+    font-size: 32px;
+    line-height: 1.5em;
+    color: #26380c;
+    background-color: white;
+    border: 5px solid #a9a344;
+    border-radius: 3px;
+  }
+  .seagate_date_field:focus {
+    border: 5px solid #bd9030;
+    outline: 0;
+    box-shadow: none;
+  }
+  .seagate_date_field:invalid {
+    border: 5px solid orangered;
+  }
+  .seagate_date_output {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .advanced_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    font-size: 24px;
+  }
+  .advanced_options select {
+    padding: 4px;
+    font-size: 16px;
+    border: 4px solid #a9a344;
+    box-shadow: none;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  .advanced_options select option {
+    font-size: 16px;
+    color: #333;
+  }
+  .advanced_options select:focus {
+    outline: none;
+    border-color: #bd9030;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 460px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .seagate_date_field {
+    padding: 5px 10px;
+    font-size: 32px;
+    line-height: 1.5em;
+    color: #26380c;
+    background-color: white;
+    border: 5px solid #a9a344;
+    border-radius: 3px;
+  }
+  .seagate_date_field:focus {
+    border: 5px solid #bd9030;
+    outline: 0;
+    box-shadow: none;
+  }
+  .seagate_date_field:invalid {
+    border: 5px solid orangered;
+  }
+  .seagate_date_output {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .advanced_options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    font-size: 24px;
+  }
+  .advanced_options select {
+    padding: 4px;
+    font-size: 16px;
+    border: 4px solid #a9a344;
+    box-shadow: none;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  .advanced_options select option {
+    font-size: 16px;
+    color: #333;
+  }
+  .advanced_options select:focus {
+    outline: none;
+    border-color: #bd9030;
+  }
+}
